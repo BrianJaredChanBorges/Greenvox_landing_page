@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Noticias</title>
+</head>
+
+<section id="seccion1" class="seccion">
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="/MainPage/logo.png" alt="logo de greenvox" class="logo-img">
+                <h2 class="nombre-empresa">GREENVOX</h2>
+            </div>
+            <nav class="botones">
+                <a href="/Inicio/index.html" class="nav-link">Inicio</a>
+                <a href="/Comunidad/comunidad.html" class="nav-link">Comunidad</a>
+                <a href="Noticias.html" class="nav-link">Noticias</a>
+                <a href="/AcercadePage/acerca_de.html" class="nav-link">Acerca de GREENVOX</a>
+            </nav>
+            <nav class="botones2">
+                <a href="" class="nav-link">Inicia sesión / Registrarse</a>
+            </nav>
+        </header>
+    </body>
+</section>
+
+<section id="seccion2" class="seccion">
+
+    <body>
+        <div class="contenedor">
+            <p>Noticias Ambientales</p>
+        </div>
+        <div class="container">
+
+            <header>
+                <nav class="nav">
+                    <span class="cat" onclick="buscar('Contaminación')">Contaminación</span>
+                    <span class="cat" onclick="buscar('Cambio climatico')">Cambio climatico</span>
+                    <span class="cat" onclick="buscar('Reciclaje')">Reciclaje</span>
+                    <span class="cat" onclick="buscar('Biodiversidad')">Biodiversidad</span>
+                    <span class="cat" onclick="buscar('Energías renovables')">Energías renovables</span>
+                </nav>
+                <div class="busqueda">
+                    <input type="text" placeholder="Qué desea buscar" id="busqueda">
+                    <button onclick="buscarTema()">Buscar</button>
+                </div>
+            </header>
+
+            <div class="container-noticias">
+
+            </div>
+        </div>
+        <script src="app.js"></script>
+    
+</section>
+
+     <section id="Piedepagina">
+        <div class="parentp">
+            <div class="divp1">
+                <h2 style="font-size: 21px;">GreenVox</h2>
+                <p>"Contribuyendo al desarrollo</p>
+                <p>sostenible y al cuidado del</p>
+                <p>medio ambiente".</p>
+            </div>
+            <div class="divp2">
+                <h2 style="font-size: 21px;">Sitio</h2>
+                <a href="/Comunidad/comunidad.html" class="sit">Comunidad</a>
+                <a href="/NoticiasPage/Noticias.html" class="sit">Noticias</a>
+                <a href="/Inicio/index.html" class="sit">Inicio</a>
+            </div>
+            <div class="divp3">
+                <h2 style="font-size: 21px;">Organización</h2>
+                <a href="#" class="sit">Acerca de GreenVox</a>
+                <a href="#" class="sit">Equipo</a>
+            </div>
+            <div class="divp4">
+                <h2 style="font-size: 21px;">Contacto</h2>
+                <a href="#" class="sit">GreenVox.mx@gmail.com</a>
+                <a href="#" class="sit">Facebook</a>
+                <a href="#" class="sit">Telegram</a>
+                <a href="#" class="sit">Twitter</a>
+            </div>
+        </div>
+        <div style="height: 20px;"></div>
+     
+    <footer>
+    <p style="margin-left: 70px;">&copy;Innova TecNM 2024 GreenVox. Campus Cancún.</p>
+    </footer>
+    </section>
+</body>
+</html>

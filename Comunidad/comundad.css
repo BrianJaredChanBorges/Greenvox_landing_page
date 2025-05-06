@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    height: 46px;
+    background-color: rgb(101, 188, 84);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    height: 66px;
+    margin-left: 110px;
+    z-index: 2;
+}
+
+.botones {
+    margin-right: 28%;
+}
+
+nav a {
+    padding: 7px;
+    font-weight: 250;
+}
+
+.nombre-empresa {
+    background-color: rgb(255, 255, 255);
+    border: 18px solid white;
+    margin-left: -13px;
+    padding: 0.5px;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(226, 245, 230);
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Estilos para el menú móvil */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(101, 188, 84);
+}
+
+.mobile-menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-icon {
+    display: none;
+}
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .botones {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 50px;
+        color: rgb(101, 188, 84);
+        border: none;
+        border-radius: 15%;
+        font-size: 27px;
+        text-align: center;
+        line-height: 40px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#Piedepagina {
+    background-color: rgb(26, 145, 76);
+
+.parentp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 105%;
+    color: rgb(226, 245, 230);
+    padding: 40px;
+}
+
+
+.divp1, .divp2, .divp3, .divp4 {
+    flex: 1 1 200px;
+    margin: 0%;
+}
+
+
+@media (max-width: 768px) {
+    .parentp {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .divp1, .divp2, .divp3, .divp4 {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+}
+
+.sit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(226, 245, 230);
+}
+
+.sit:hover {
+    color: white;
+}
+}
+footer {
+    background-color: rgb(101, 188, 84);
+    color: #fff;
+    padding: 20px 0;
+    text-align: left; 
+}
+
+#menusselec {
+    --first-color: hsl(82, 60%, 28%);
+    --title-color: hsl(0, 0%, 15%);
+    --text-color: hsl(0, 0%, 35%);
+    --body-color: hsl(0, 0%, 95%);
+    --container-color: hsl(0, 0%, 100%);
+    --body-font: "Poppins", sans-serif;
+    --h2-font-size: 1.25rem;
+    --small-font-size: .813rem;
+  }
+  
+  @media screen and (min-width: 1120px) {
+    #menusselec {
+      --h2-font-size: 1.5rem;
+      --small-font-size: .875rem;
+    }
+  }
+  
+  /*=============== BASE ===============*/
+  #menusselec * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #menusselec body {
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+    color: var(--text-color);
+  }
+  
+  #menusselec img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /*=============== CARD ===============*/
+  #menusselec .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  #menusselec .card__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  #menusselec .card__wrapper {
+    position: relative;
+    width: 300px;
+  }
+  
+  #menusselec .card__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  #menusselec .card__article {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 100%; /* Asegurar que las tarjetas ocupen todo el ancho disponible */
+  }
+  
+  #menusselec .card__article:hover {
+    transform: scale(1.05);
+  }
+  
+  #menusselec .card__img {
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  
+  #menusselec .card__data {
+    padding: 1rem;
+    background-color: var(--container-color);
+    border-radius: 0 0 0.5rem 0.5rem;
+    text-align: center;
+  }
+  
+  #menusselec .card__description {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: .25rem;
+  }
+  
+  #menusselec .card__title {
+    font-size: var(--h2-font-size);
+    font-weight: 500;
+    color: var(--title-color);
+    margin-bottom: .75rem;
+  }
+  
+  #menusselec .card__button {
+    display: block;
+    text-decoration: none;
+    font-size: var(--small-font-size);
+    font-weight: 200;
+    color: var(--first-color);
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--first-color);
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #menusselec .card__button:hover {
+    background-color: var(--first-color);
+    color: var(--container-color);
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    #menusselec .card__wrapper {
+      width: calc(100% - 2rem); /* Ajustar el ancho de las tarjetas en dispositivos móviles */
+      margin-bottom: 2rem; /* Agregar margen inferior entre las tarjetas */
+    }
+  }
+  
+  

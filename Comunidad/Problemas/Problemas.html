@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Preguntas Medioambientales</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/MainPage/logo.png" alt="Logo">
+            <h2 class="nombre-empresa">GREENVOX</h2>
+        </div>
+        <button class="menu-icon" onclick="toggleMenu()">
+            <span class="fas fa-bars"></span>
+        </button>
+        <!-- Fin Botón de menú -->
+        <nav class="botones">
+            <a href="/Inicio/index.html">Inicio</a>
+            <a href="/Comunidad/comunidad.html">Comunidad</a>
+            <a href="/NoticiasPage/Noticias.html">Noticias</a>
+            <a href="/AcercadePage/acerca_de.html">Acerca de GREENVOX</a>
+        </nav>
+        <nav class="botones" style="margin-right: 0%;">
+            <a href="" class="nav-link">Inicia sesión / Registrarse</a>
+        </nav>
+    </header>
+    <!-- Menú desplegable para dispositivos móviles -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#">Inicio</a>
+        <a href="#">Comunidad</a>
+        <a href="#">Noticias</a>
+        <a href="#">Acerca de GREENVOX</a>
+        <a href="#">Inicia sesión / Registrarse</a>
+    </div>
+    <!-- Fin Menú desplegable -->
+
+    <div class="container">
+        <h1>Resuelve Problemas Medioambientales</h1>
+        <div class="tags">
+            <label for="tagSelect">Selecciona una etiqueta:</label>
+            <select id="tagSelect">
+                <option value="contaminacion">Contaminación</option>
+                <option value="cambio_climatico">Cambio Climático</option>
+                <option value="reciclaje">Reciclaje</option>
+                <option value="energias_renovables">Energías Renovables</option>
+                <option value="conservacion_biodiversidad">Conservación de la Biodiversidad</option>
+                <option value="agricultura_sostenible">Agricultura Sostenible</option>
+                <option value="consumo_responsable">Consumo Responsable</option>
+                <option value="movilidad_sostenible">Movilidad Sostenible</option>
+                <option value="gestion_residuos">Gestión de Residuos</option>
+                <option value="educacion_ambiental">Educación Ambiental</option>
+            </select>
+        </div>
+        <div class="question">
+            <h2>Pregunta:</h2>
+            <p id="questionText">Selecciona una etiqueta para ver la pregunta.</p>
+        </div>
+        
+        <div class="answer">
+            <h2>Tu respuesta:</h2>
+            <textarea id="answerText" rows="4" cols="50" placeholder="Escribe tu respuesta aquí..."></textarea>
+            <button onclick="submitAnswer()">Enviar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

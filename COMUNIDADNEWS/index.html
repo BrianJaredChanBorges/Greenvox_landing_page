@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlace a Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Comunidad Grenvox</title>
+</head>
+
+<body>
+        <section id="Encabezado">
+            <header>
+                <div class="logo">
+                    <img src="logo.png" alt="Logo">
+                    <h2 class="nombre-empresa">GREENVOX</h2>
+                </div>
+                <button class="menu-icon" onclick="toggleMenu()">
+                    <span class="fas fa-bars"></span>
+                </button>
+                <!-- Fin Botón de menú -->
+                <nav class="botones">
+                    <a href="/Inicio/index.html">Inicio</a>
+                    <a href="/Comunidad/comunidad.html">Comunidad</a>
+                    <a href="/NoticiasPage/Noticias.html">Noticias</a>
+                    <a href="/AcercadePage/acerca_de.html">Acerca de GREENVOX</a>
+                </nav>
+                <nav class="botones" style="margin-right: 0%;">
+                    <a href="" class="nav-link">Inicia sesión / Registrarse</a>
+                </nav>
+            </header>
+        
+            <!-- Menú desplegable para dispositivos móviles -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#">Inicio</a>
+                <a href="#">Comunidad</a>
+                <a href="#">Noticias</a>
+                <a href="#">Acerca de GREENVOX</a>
+                <a href="#">Inicia sesión / Registrarse</a>
+            </div>
+            <!-- Fin Menú desplegable -->
+        </section>
+
+<section id="preguntas">
+<div class="container">
+    <h1>Resuelve problemas de interes</h1>
+    <div class="buttons" id="buttonsContainer">
+        <div class="button" onclick="selectTag('Contaminacion')">
+            <img src="Recursos menú/1.png" alt="Contaminación">
+            <span>Contaminación</span>
+        </div>
+        <div class="button" onclick="selectTag('Cambio_climatico')">
+            <img src="Recursos menú/2.png" alt="Cambio Climático">
+            <span>Cambio Climático</span>
+        </div>
+        <div class="button" onclick="selectTag('Reciclaje')">
+            <img src="Recursos menú/3.png" alt="Reciclaje">
+            <span>Reciclaje</span>
+        </div>
+        <div class="button" onclick="selectTag('Energias_renovables')">
+            <img src="Recursos menú/4.png" alt="Energías Renovables">
+            <span>Energías Renovables</span>
+        </div>
+        <div class="button" onclick="selectTag('Conservacion_biodiversidad')">
+            <img src="Recursos menú/5.png" alt="Conservación de la Biodiversidad">
+            <span>Conservación de la Biodiversidad</span>
+        </div>
+        <div class="button" onclick="selectTag('Agricultura_sostenible')">
+            <img src="Recursos menú/6.png" alt="Agricultura Sostenible">
+            <span>Agricultura Sostenible</span>
+        </div>
+        <div class="button" onclick="selectTag('Consumo_responsable')">
+            <img src="Recursos menú/8.png" alt="Consumo Responsable">
+            <span>Consumo Responsable</span>
+        </div>
+        <div class="button" onclick="selectTag('Movilidad_sostenible')">
+            <img src="Recursos menú/7.png" alt="Movilidad Sostenible">
+            <span>Movilidad Sostenible</span>
+        </div>
+        <div class="button" onclick="selectTag('Gestion_residuos')">
+            <img src="Recursos menú/9.png" alt="Gestión de Residuos">
+            <span>Gestión de Residuos</span>
+        </div>
+        <div class="button" onclick="selectTag('Educacion_ambiental')">
+            <img src="Recursos menú/10.png" alt="Educación Ambiental">
+            <span>Educación Ambiental</span>
+        </div>
+    </div>
+
+    <div class="loading" id="loadingText">
+        <p>Eligiendo pregunta  </p>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <div class="question" id="questionDiv">
+        <h2>Pregunta:</h2>
+        <p id="questionText">Selecciona una etiqueta para ver la pregunta.</p>
+    </div>
+    
+    <div class="answer" id="answerDiv">
+        <h2>Tu respuesta:</h2>
+        <textarea id="answerText" rows="4" cols="50" placeholder="Escribe tu respuesta aquí..."></textarea>
+        <div class="tags">
+            <label>Objetividad de la respuesta:</label><br>
+            <label><input type="radio" name="objectivity" value="conocimiento"> Conocimiento</label>
+            <label><input type="radio" name="objectivity" value="gente"> Gente</label>
+            <label><input type="radio" name="objectivity" value="dinero"> Dinero</label>
+            <label><input type="radio" name="objectivity" value="otro"> Otro</label>
+        </div>
+        <button onclick="submitAnswer()">Enviar</button>
+    </div>
+</div>
+
+<div class="success-message" id="successMessage" style="display: none;">
+    <p>Su respuesta fue enviada. ¡Gracias por responder!</p>
+</div>
+</section>
+
+<section id="Piedepagina">
+    <div class="parentp">
+        <div class="divp1">
+            <h2 style="font-size: 21px;">GreenVox</h2>
+            <p>"Contribuyendo al desarrollo</p>
+            <p>sostenible y al cuidado del</p>
+            <p>medio ambiente".</p>
+        </div>
+        <div class="divp2">
+            <h2 style="font-size: 21px;">Sitio</h2>
+            <a href="#" class="sit">Comunidad</a>
+            <a href="#" class="sit">Noticias</a>
+            <a href="#" class="sit">Inicio</a>
+        </div>
+        <div class="divp3">
+            <h2 style="font-size: 21px;">Organización</h2>
+            <a href="#" class="sit">Acerca de GreenVox</a>
+            <a href="#" class="sit">Equipo</a>
+        </div>
+        <div class="divp4">
+            <h2 style="font-size: 21px;">Contacto</h2>
+            <a href="#" class="sit">GreenVox.mx@gmail.com</a>
+            <a href="#" class="sit">Facebook</a>
+            <a href="#" class="sit">Telegram</a>
+            <a href="#" class="sit">Twitter</a>
+        </div>
+    </div>
+    <div style="height: 20px;"></div>
+</section>
+<footer>
+    <p style="margin-left: 70px;">&copy;Innova TecNM 2024 GreenVox. Campus Cancún.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

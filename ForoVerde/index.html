@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForoVerde</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <section id="Encabezado">
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+                <h2 class="nombre-empresa">GREENVOX</h2>
+            </div>
+            <button class="menu-icon" onclick="toggleMenu()">
+                <span class="fas fa-bars"></span>
+            </button>
+            <!-- Fin Botón de menú -->
+            <nav class="botones">
+                <a href="/Inicio/index.html">Inicio</a>
+                <a href="/Comunidad/comunidad.html">Comunidad</a>
+                <a href="/NoticiasPage/Noticias.html">Noticias</a>
+                <a href="/AcercadePage/acerca_de.html">Acerca de GREENVOX</a>
+            </nav>
+            <nav class="botones" style="margin-right: 0%;">
+                <a href="" class="nav-link">Inicia sesión / Registrarse</a>
+            </nav>
+        </header>
+
+        <!-- Menú desplegable para dispositivos móviles -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="/Inicio/index.html">Inicio</a>
+            <a href="/Comunidad/comunidad.html">Comunidad</a>
+            <a href="/NoticiasPage/Noticias.html">Noticias</a>
+            <a href="/AcercadePage/acerca_de.html">Acerca de GREENVOX</a>
+            <a href="#">Inicia sesión / Registrarse</a>
+        </div>
+        <!-- Fin Menú desplegable -->
+    </section>
+
+
+    <section id="chatGlobal">
+        <div class="container">
+            <h1>Foro Verde</h1>
+            <button id="newPostButton">Nueva Publicación</button>
+            <div class="posts" id="postsContainer">
+                <!-- Publicaciones del chat -->
+            </div>
+        </div>
+    </section>
+
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Nueva Publicación</h2>
+            <input type="text" id="postTitle" placeholder="Título del post...">
+            <textarea id="postContent" rows="6" placeholder="Escribe tu mensaje..."></textarea> <!-- Ajuste de filas -->
+            <button onclick="createPost()">Publicar</button>
+        </div>
+    </div>
+
+
+    <section id="Piedepagina">
+        <div class="parentp">
+            <div class="divp1">
+                <h2 style="font-size: 21px;">GreenVox</h2>
+                <p>"Contribuyendo al desarrollo</p>
+                <p>sostenible y al cuidado del</p>
+                <p>medio ambiente".</p>
+            </div>
+            <div class="divp2">
+                <h2 style="font-size: 21px;">Sitio</h2>
+                <a href="#" class="sit">Comunidad</a>
+                <a href="#" class="sit">Noticias</a>
+                <a href="#" class="sit">Inicio</a>
+            </div>
+            <div class="divp3">
+                <h2 style="font-size: 21px;">Organización</h2>
+                <a href="#" class="sit">Acerca de GreenVox</a>
+                <a href="#" class="sit">Equipo</a>
+            </div>
+            <div class="divp4">
+                <h2 style="font-size: 21px;">Contacto</h2>
+                <a href="#" class="sit">GreenVox.mx@gmail.com</a>
+                <a href="#" class="sit">Facebook</a>
+                <a href="#" class="sit">Telegram</a>
+                <a href="#" class="sit">Twitter</a>
+            </div>
+        </div>
+        <div style="height: 20px;"></div>
+    </section>
+    <footer>
+        <p style="margin-left: 70px;">&copy;Innova TecNM 2024 GreenVox. Campus Cancún.</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

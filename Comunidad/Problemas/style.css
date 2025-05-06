@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    height: 46px;
+    background-color: rgb(101, 188, 84);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    height: 66px;
+    margin-left: 110px;
+    z-index: 2;
+}
+
+.botones {
+    margin-right: 28%;
+}
+
+nav a {
+    padding: 7px;
+    font-weight: 250;
+}
+
+.nombre-empresa {
+    background-color: rgb(255, 255, 255);
+    border: 18px solid white;
+    margin-left: -13px;
+    padding: 0.5px;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(226, 245, 230);
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Estilos para el menú móvil */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(101, 188, 84);
+}
+
+.mobile-menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .botones {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 50px;
+        color: rgb(101, 188, 84);
+        border: none;
+        border-radius: 15%;
+        font-size: 27px;
+        text-align: center;
+        line-height: 40px;
+    }
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tags {
+    margin-bottom: 20px;
+}
+
+.tags label {
+    font-weight: bold;
+}
+
+.tags select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.question, .answer {
+    margin-bottom: 20px;
+}
+
+.question h2, .answer h2 {
+    margin-bottom: 10px;
+}
+
+.answer textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.answer button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.answer button:hover {
+    background-color: #45a049;
+}

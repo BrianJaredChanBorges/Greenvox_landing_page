@@ -1,0 +1,315 @@
+/* Estilos globales */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Estilos de la sección del chat */
+#chatGlobal {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 10%;
+}
+
+#chatGlobal h1 {
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#newPostButton {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+#newPostButton:hover {
+    background-color: #45a049;
+}
+
+.posts {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.post .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.post .content {
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Estilos del modal */
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    max-width: 600px;
+    width: 80%;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.close {
+    color: #aaa;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.close:hover {
+    color: #333;
+}
+
+.modal-content h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.modal-content textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.modal-content button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #45a049;
+}
+
+.votes button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #4CAF50 !important;
+    transition: color 0.3s;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.votes button:hover {
+    color: #45a049 !important;
+}
+
+.votes button::before {
+    color: #4CAF50 !important;
+}
+
+.modal-content input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    height: 40px;
+}
+
+* {
+    margin: 0;
+}
+
+#Piedepagina {
+    background-color: rgb(26, 145, 76);
+
+.parentp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 105%;
+    color: rgb(226, 245, 230);
+    padding: 40px;
+}
+
+
+.divp1, .divp2, .divp3, .divp4 {
+    flex: 1 1 200px;
+    margin: 0%;
+}
+
+
+@media (max-width: 768px) {
+    .parentp {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .divp1, .divp2, .divp3, .divp4 {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+}
+
+.sit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(226, 245, 230);
+}
+
+.sit:hover {
+    color: white;
+}
+}
+footer {
+    background-color: rgb(101, 188, 84);
+    color: #fff;
+    padding: 20px 0;
+    text-align: left; 
+}
+
+header {
+    display: flex;
+    height: 46px;
+    background-color: rgb(101, 188, 84);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    height: 66px;
+    margin-left: 110px;
+    z-index: 2;
+}
+
+.botones {
+    margin-right: 28%;
+}
+
+nav a {
+    padding: 7px;
+    font-weight: 250;
+}
+
+.nombre-empresa {
+    background-color: rgb(255, 255, 255);
+    border: 18px solid white;
+    margin-left: -13px;
+    padding: 0.5px;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(226, 245, 230);
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Estilos para el menú móvil */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(101, 188, 84);
+}
+
+.mobile-menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-icon {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .botones {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 50px;
+        color: rgb(101, 188, 84);
+        border: none;
+        border-radius: 15%;
+        font-size: 27px;
+        text-align: center;
+        line-height: 40px;
+    }
+}
